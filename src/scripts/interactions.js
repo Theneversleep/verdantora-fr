@@ -48,31 +48,13 @@ for (const button of document.querySelectorAll(".questions button")) {
       .setAttribute("aria-hidden", String(!open));
   });
 }
-const track = document.querySelector(".review-track");
-function moveReview(direction) {
-  const max = track.scrollWidth - track.clientWidth;
-  const left = track.getBoundingClientRect().left;
-  const stops = [...track.children].map((card) =>
-    Math.min(max, track.scrollLeft + card.getBoundingClientRect().left - left),
-  );
-  const next =
-    direction > 0
-      ? (stops.find((x) => x > track.scrollLeft + 2) ?? 0)
-      : (stops.reverse().find((x) => x < track.scrollLeft - 2) ?? max);
-  track.scrollTo({
-    left: next,
-    behavior: reducedMotion.matches ? "instant" : "smooth",
-  });
-}
-for (const arrow of document.querySelectorAll("[data-review]")) {
-  arrow.addEventListener("click", () =>
-    moveReview(Number(arrow.dataset.review)),
-  );
-}
-track.addEventListener("keydown", (event) => {
-  if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
-  event.preventDefault();
-  moveReview(event.key === "ArrowRight" ? 1 : -1);
+const reviews = document.querySelector(".reviews");
+const reviewToggle = reviews.querySelector(".review-toggle");
+reviews.classList.add("with-motion");
+reviewToggle.hidden = false;
+reviewToggle.addEventListener("click", () => {
+  const paused = reviews.classList.toggle("is-paused");
+  reviewToggle.textContent = paused ? "Reprendre le défilement" : "Mettre en pause";
 });
 document.addEventListener("click", (event) => {
   const link = event.target.closest('a[href^="#"]');

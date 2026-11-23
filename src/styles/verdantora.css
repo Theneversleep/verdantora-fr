@@ -275,7 +275,6 @@ p {
 .brand,
 .actions,
 .step-icons,
-.arrows,
 .copyright {
   display: inline-flex;
   align-items: center;
@@ -596,21 +595,54 @@ p {
   flex: 1;
   background: #ffffff24;
 }
-.review-track {
-  display: flex;
-  overflow: auto;
-  scroll-snap-type: x mandatory;
+.review-rows {
+  display: grid;
   gap: 20px;
-  scrollbar-width: none;
   margin: 42px auto 20px;
   max-width: 970px;
 }
-.review-track::-webkit-scrollbar {
-  display: none;
+.review-lane { min-width: 0; }
+.review-group {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+}
+.review-group[aria-hidden="true"] { display: none; }
+.review-toggle {
+  display: block;
+  margin: auto;
+  padding: 10px 20px;
+  color: var(--ink);
+  background: white;
+  border: 1px solid #15181533;
+  border-radius: 24px;
+  font: inherit;
+  cursor: pointer;
+}
+.review-toggle:hover { background: var(--lime); }
+.review-toggle[hidden] { display: none; }
+@media (prefers-reduced-motion: reduce) {
+  .review-toggle { display: none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .with-motion .review-lane { overflow: hidden; }
+  .with-motion .review-track {
+    display: flex;
+    width: max-content;
+    animation: review-scroll 60s linear infinite;
+  }
+  .with-motion .review-lane:nth-child(2) .review-track { animation-direction: reverse; }
+  .with-motion .review-group {
+    display: flex;
+    padding-right: 20px;
+  }
+  .with-motion .review { width: min(440px, 78vw); }
+  .is-paused .review-track { animation-play-state: paused; }
+}
+@keyframes review-scroll {
+  to { transform: translateX(-50%); }
 }
 .review {
-  flex: 0 0 min(440px, 95%);
-  scroll-snap-align: start;
   border: 1px solid #1518151a;
   border-radius: 22px;
   padding: 30px;
@@ -641,12 +673,6 @@ p {
 .review strong {
   color: var(--ink);
 }
-.arrows {
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-}
-.arrows button,
 .local-detail button {
   background: white;
   border: 1px solid #15181522;
@@ -654,9 +680,6 @@ p {
   width: 44px;
   height: 44px;
   font-size: 24px;
-}
-.arrows button:hover {
-  background: var(--lime);
 }
 #faq .split {
   align-items: start;
@@ -1063,9 +1086,6 @@ address a {
   }
   .reviews .heading {
     margin: auto;
-  }
-  .arrows {
-    justify-content: start;
   }
   .visit small {
     left: 8px;

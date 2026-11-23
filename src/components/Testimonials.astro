@@ -45,35 +45,39 @@ const items = [
     place: "Propriétaire à Beaverton",
   },
 ];
+const rows = [items.slice(0, 3), items.slice(3)];
 ---
 
 <section id="temoignages" class="block wrap reviews">
   <Heading label="Témoignages" title="La parole aux amoureux du jardin." />
-  <div class="review-track" tabindex="0" aria-label="Avis des clients">
-    {items.map((item) => (
-      <figure class="review">
-        <div>
-          <span class="icon-tile">❞</span>
-          <small>{item.service}</small>
+  <div class="review-rows">
+    {rows.map((row) => (
+      <div class="review-lane">
+        <div class="review-track">
+          {[false, true].map((duplicate) => (
+            <div class="review-group" aria-hidden={duplicate || undefined}>
+              {row.map((item) => (
+                <figure class="review">
+                  <div>
+                    <span class="icon-tile">❞</span>
+                    <small>{item.service}</small>
+                  </div>
+                  <blockquote>{item.quote}</blockquote>
+                  <figcaption>
+                    <Icon name="plant" />
+                    <span>
+                      <strong>{item.name}</strong>
+                      <br />
+                      {item.place}
+                    </span>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          ))}
         </div>
-        <blockquote>{item.quote}</blockquote>
-        <figcaption>
-          <Icon name="plant" />
-          <span>
-            <strong>{item.name}</strong>
-            <br />
-            {item.place}
-          </span>
-        </figcaption>
-      </figure>
+      </div>
     ))}
   </div>
-  <div class="arrows">
-    <button data-review="-1" aria-label="Avis précédent">
-      ‹
-    </button>
-    <button data-review="1" aria-label="Avis suivant">
-      ›
-    </button>
-  </div>
+  <button class="review-toggle" type="button" hidden>Mettre en pause</button>
 </section>
