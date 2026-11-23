@@ -1,15 +1,25 @@
-# Verdantora · Landing page en français
+# Verdantora · Landing page Astro
 
-Page de présentation de Verdantora, avec les services paysagers, les réalisations, les témoignages et la FAQ. Les fiches de projet et les informations de confidentialité s’ouvrent directement dans la page.
+Landing page française de Verdantora, construite avec Astro 6. Les sections se trouvent dans `src/components/` et sont assemblées dans `src/pages/index.astro`. Les photos et les polices sont conservées dans `src/assets/`.
 
-## Ouvrir la page
+## Développement
 
-Ouvrez `index.html` dans un navigateur. Le fichier contient les images, les polices et les scripts nécessaires à une consultation hors ligne.
+Avec Node.js 24.22.3 et pnpm 11.25.0, lancer à la racine du projet :
 
-## Publier avec GitHub Pages
+```sh
+pnpm install --frozen-lockfile
+pnpm dev
+```
 
-Dans les paramètres du dépôt, ouvrez **Pages**, choisissez **Deploy from a branch**, puis sélectionnez la branche `main` et le dossier `/ (root)`.
+## Compilation
+
+```sh
+pnpm build
+pnpm preview
+```
+
+La compilation produit `dist/index.html`. Ce fichier s’ouvre directement dans un navigateur, même hors ligne. Les images, polices, styles et interactions y sont intégrés. Pour un hébergement statique, publier le contenu de `dist/`.
 
 ## Formulaires
 
-Les boutons de devis ouvrent la messagerie de l’appareil. Le formulaire de newsletter est une démonstration locale. Il vérifie le format de l’adresse saisie et ne l’enregistre pas.
+Les demandes de devis s’ouvrent dans la messagerie du visiteur. La newsletter est une démonstration locale et ne transmet aucune adresse.

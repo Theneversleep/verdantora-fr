@@ -1,0 +1,76 @@
+---
+import Navigation from '../components/Navigation.astro';
+import Hero from '../components/Hero.astro';
+import TrustBar from '../components/TrustBar.astro';
+import About from '../components/About.astro';
+import Services from '../components/Services.astro';
+import WhyVerdantora from '../components/WhyVerdantora.astro';
+import Projects from '../components/Projects.astro';
+import Process from '../components/Process.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Faq from '../components/Faq.astro';
+import CallToAction from '../components/CallToAction.astro';
+import Footer from '../components/Footer.astro';
+import Icons from '../components/Icons.astro';
+import Details from '../components/Details.astro';
+import '../styles/verdantora.css';
+---
+<!doctype html>
+<html lang="fr" data-redirect-timezone="1" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	
+	<title>Verdantora | Paysagisme et création de jardins</title>
+
+<meta name="description" content="Découvrez les services, les réalisations et la démarche de Verdantora pour aménager et entretenir votre jardin.">
+
+</head>
+<body>
+
+	<div id="main">
+
+<div class="framer-YBrRV framer-ZPy2I framer-8porm framer-CjBm3 framer-yvzNn framer-10w9fer" data-layout-template="true" style="min-height:100vh;width:auto">
+<Navigation />
+<div data-framer-root class="framer-aDcAP framer-2L1Jx framer-8porm framer-KKiRC framer-e6eKS framer-9Nqly framer-Dcmn2 framer-ZPy2I framer-72rtr7" style="min-height:100vh;width:auto;display:contents">
+<Hero /><div class="framer-w8sjr7" data-framer-name="Sheet Wrap"><main class="framer-1nkmt8g" data-framer-name="Sheet"><TrustBar /><About /><Services /><WhyVerdantora /><Projects /><Process /><Testimonials /><Faq /><CallToAction /></main></div>
+</div>
+<div class="framer-1qcl0ds" data-framer-name="Footer Wrap"><Footer /></div>
+</div>
+<div id="template-overlay"></div>
+
+</div>
+
+	<Icons />
+
+<script is:inline>
+const toggle=document.querySelector('[data-framer-name="Menu Toggle"]');
+function menu(){const open=toggle.closest('nav').classList.toggle('expanded');toggle.setAttribute('aria-expanded',open)}
+toggle.onclick=menu;
+toggle.onkeydown=e=>{if(['Enter',' '].includes(e.key)){e.preventDefault();menu()}};
+document.onkeydown=e=>{if(e.key==='Escape' && toggle.getAttribute('aria-expanded')==='true'){menu();toggle.focus()}};
+</script><script is:inline>
+for(const link of document.querySelectorAll('nav a')){
+  link.addEventListener('click',()=>{
+    const nav=link.closest('nav');
+    nav.classList.remove('expanded');
+    nav.querySelector('[data-framer-name="Menu Toggle"]')?.setAttribute('aria-expanded','false');
+  });
+}
+</script>
+<Details /><script is:inline>
+document.addEventListener('click',event=>{
+  const link=event.target.closest('a[href^="#"]');
+  if(!link||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+  const target=document.getElementById(link.hash.slice(1));
+  if(!target?.matches('dialog.local-detail'))return;
+  event.preventDefault();
+  document.querySelector('dialog.local-detail[open]')?.close();
+  target.showModal();
+});
+const initialDetail=document.getElementById(location.hash.slice(1));
+if(initialDetail?.matches('dialog.local-detail'))initialDetail.showModal();
+</script>
+</body>
+</html>
