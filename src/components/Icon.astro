@@ -1,0 +1,7 @@
+---
+const { name = "leaf" } = Astro.props;
+---
+
+<svg aria-hidden="true" viewBox="0 0 24 24">
+  <use href={`#icon-${name}`} />
+</svg>

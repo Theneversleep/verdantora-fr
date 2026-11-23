@@ -1,0 +1,11 @@
+---
+const { name, alt = "", class: className } = Astro.props;
+const photos = import.meta.glob("../assets/images/*.jpg", {
+  eager: true,
+  query: "?inline",
+  import: "default",
+});
+const path = `../assets/images/${name}.jpg`;
+---
+
+<img src={photos[path]} alt={alt} class={className} decoding="async" />

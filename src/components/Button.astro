@@ -1,0 +1,11 @@
+---
+import Icon from "./Icon.astro";
+const { href, tone = "lime" } = Astro.props;
+---
+
+<a class:list={["button", tone]} {href}>
+  <slot />
+  <span>
+    <Icon />
+  </span>
+</a>

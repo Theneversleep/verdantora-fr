@@ -1,98 +1,72 @@
 ---
-
+import Heading from "./Heading.astro";
+const items = [
+  {
+    question: "Quels services paysagers proposez-vous ?",
+    answer:
+      "Nous intervenons chez les particuliers de la région pour concevoir et aménager des jardins, créer des pelouses, poser du gazon et aménager des espaces de vie extérieurs. Nous assurons aussi l’entretien régulier et les soins saisonniers.",
+  },
+  {
+    question: "Combien coûte un aménagement paysager ?",
+    answer:
+      "Pour la plupart des remises en état de jardin, comptez environ 2 500 $ au minimum. Pour un projet complet de conception et de réalisation, nous établissons le prix après une visite sur place. Vous recevez un devis détaillé avant le début des travaux.",
+  },
+  {
+    question: "Pouvez-vous partir de mon jardin actuel ?",
+    answer:
+      "Oui. Nous conservons souvent les arbres et les arbustes en bonne santé, ainsi que les dallages en bon état. Nous repensons ensuite les plantations, les circulations ou les massifs en nous appuyant sur ce qui fonctionne déjà.",
+  },
+  {
+    question: "Combien de temps dure un projet ?",
+    answer:
+      "Les petits travaux de plantation prennent généralement un à trois jours. Pour un projet plus important, de la conception à la réalisation, comptez deux à six semaines selon l’ampleur des travaux et la météo.",
+  },
+  {
+    question: "Proposez-vous un entretien régulier du jardin ?",
+    answer:
+      "Oui. Nous proposons un passage chaque semaine, toutes les deux semaines ou une fois par mois. Nous intervenons aussi ponctuellement au fil des saisons pour tailler, nettoyer le jardin ou renouveler les plantations.",
+  },
+  {
+    question: "Comment démarrer mon projet ?",
+    answer:
+      "Remplissez le formulaire de demande de devis en précisant quelques détails sur votre terrain. Nous vous répondrons sous un jour ouvré pour convenir d’une visite gratuite sur place.",
+  },
+];
 ---
-<section class="framer-19r83fo" data-framer-name="FAQ" id="faq"><div class="framer-15x2vva" data-framer-name="Container"><div class="framer-1gh9x44" data-framer-name="FAQ Row">
-<div class="framer-bw9jv9" data-framer-name="Intro">
-<div class="framer-15fpooy" data-framer-name="Header">
-<div class="framer-actgmd-container"><div class="framer-QZP8T framer-GWDkn framer-WCT5l framer-1n841o2 framer-v-1n841o2" data-framer-name="Dark">
-<div class="framer-190ldb8" data-framer-name="Mark" style="background-color:var(--token-ZuWZH7cws);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px"><svg class="framer-ohg0r framer-1rixcj0" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:2.5"><use href="#465907804"></use></svg></div>
-<div class="framer-34zdkf" data-framer-name="Text" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-846g2o" data-styles-preset="NzOW5QeCi" dir="auto">FAQ</p></div>
-</div></div>
-<div class="framer-1qvi309" data-framer-component-type="RichTextContainer" style="transform:none"><h2 class="framer-text framer-styles-preset-20vnzn" data-styles-preset="e0Wa4U59r" dir="auto" style="--framer-text-alignment:left">Des questions avant de vous lancer ?</h2></div>
-<div class="framer-1oq13di" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-79y66i" data-styles-preset="KqVCeVwx9" dir="auto" style="--framer-text-alignment:left">Retrouvez les réponses aux questions les plus fréquentes. Vous avez une autre question ? Contactez-nous, nous serons ravis de vous aider.</p></div>
-</div>
-<div class="framer-1ngvn1o" data-framer-name="Contact" id="contact">
-<div class="ssr-variant"><div class="framer-1dmpxrq-container"><div class="framer-BbOC4 framer-Uwrvc framer-9Nqly framer-1gcrdw4 framer-v-nepaap" data-framer-name="Inline" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background-color:rgba(0, 0, 0, 0);width:100%;border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-left-radius:0px;border-top-right-radius:0px">
-<div class="framer-1xz89pa" data-framer-name="Icon Box" style="background-color:var(--token-ZuWZH7cws);border-bottom-left-radius:14px;border-bottom-right-radius:14px;border-top-left-radius:14px;border-top-right-radius:14px"><svg class="framer-my9st framer-wv5a3x" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:1.5"><use href="#130366660"></use></svg></div>
-<div class="framer-97kop3" data-framer-name="Text">
-<div class="framer-9d9fqz" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h4 class="framer-text framer-styles-preset-tfuygb" data-styles-preset="j4XDnIomv" dir="auto">E-mail</h4></div>
-<div class="framer-1paq8nb" data-framer-name="Description" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-il35gq" data-styles-preset="dUG1ijfyF" dir="auto"><a href="mailto:hello@verdantora.com" style="color:inherit;text-decoration:inherit">hello@verdantora.com</a></p></div>
-</div>
-</div></div></div>
-<div class="ssr-variant"><div class="framer-2d3x5x-container"><div class="framer-BbOC4 framer-Uwrvc framer-9Nqly framer-1gcrdw4 framer-v-nepaap" data-framer-name="Inline" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background-color:rgba(0, 0, 0, 0);width:100%;border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-left-radius:0px;border-top-right-radius:0px">
-<div class="framer-1xz89pa" data-framer-name="Icon Box" style="background-color:var(--token-ZuWZH7cws);border-bottom-left-radius:14px;border-bottom-right-radius:14px;border-top-left-radius:14px;border-top-right-radius:14px"><svg class="framer-C6MlI framer-wv5a3x" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:1.5"><use href="#986463349"></use></svg></div>
-<div class="framer-97kop3" data-framer-name="Text">
-<div class="framer-9d9fqz" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h4 class="framer-text framer-styles-preset-tfuygb" data-styles-preset="j4XDnIomv" dir="auto">Téléphone</h4></div>
-<div class="framer-1paq8nb" data-framer-name="Description" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-il35gq" data-styles-preset="dUG1ijfyF" dir="auto"><a href="tel:+15035550148" style="color:inherit;text-decoration:inherit">+1 (503) 555-0148</a></p></div>
-</div>
-</div></div></div>
-</div>
-</div>
-<div class="framer-1hyq4fu" data-framer-name="Accordion">
-<div class="framer-ykm2ho" data-framer-name="FAQ Entry"><div class="ssr-variant"><div class="framer-13ntjla-container"><div class="framer-M6WDS framer-Uwrvc framer-9Nqly framer-oqgosc framer-v-1bs6yvs" data-border="true" data-framer-name="Closed" data-highlight="true" style="--border-bottom-width:1px;--border-color:rgba(21, 24, 21, 0.07);--border-left-width:1px;--border-right-width:1px;--border-style:solid;--border-top-width:1px;background-color:var(--token-rbMjhvx2Y);width:100%;border-bottom-left-radius:18px;border-bottom-right-radius:18px;border-top-left-radius:18px;border-top-right-radius:18px">
-<div class="framer-1rlflu0" data-framer-name="Head" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-reponse-1">
-<div class="framer-1m60ii5" data-framer-name="Question" data-framer-component-type="RichTextContainer" style="transform:none"><h4 class="framer-text framer-styles-preset-tfuygb" data-styles-preset="j4XDnIomv" dir="auto">Quels services paysagers proposez-vous ?</h4></div>
-<div class="framer-2rjvm3" data-framer-name="Toggle" style="background-color:var(--token-INUT55ETJ);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px"><svg class="framer-ohg0r framer-1e5mt4a" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:2"><use href="#465907804"></use></svg></div>
-</div>
-<div id="faq-reponse-1" class="framer-l38ec4" data-framer-name="Answer" data-framer-component-type="RichTextContainer" hidden><p class="framer-text framer-styles-preset-il35gq">Nous intervenons chez les particuliers de la région pour concevoir et aménager des jardins, créer des pelouses, poser du gazon et aménager des espaces de vie extérieurs. Nous assurons aussi l’entretien régulier et les soins saisonniers.</p></div>
-</div></div></div></div>
-<div class="framer-ykm2ho" data-framer-name="FAQ Entry"><div class="ssr-variant"><div class="framer-13ntjla-container"><div class="framer-M6WDS framer-Uwrvc framer-9Nqly framer-oqgosc framer-v-1bs6yvs" data-border="true" data-framer-name="Closed" data-highlight="true" style="--border-bottom-width:1px;--border-color:rgba(21, 24, 21, 0.07);--border-left-width:1px;--border-right-width:1px;--border-style:solid;--border-top-width:1px;background-color:var(--token-rbMjhvx2Y);width:100%;border-bottom-left-radius:18px;border-bottom-right-radius:18px;border-top-left-radius:18px;border-top-right-radius:18px">
-<div class="framer-1rlflu0" data-framer-name="Head" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-reponse-2">
-<div class="framer-1m60ii5" data-framer-name="Question" data-framer-component-type="RichTextContainer" style="transform:none"><h4 class="framer-text framer-styles-preset-tfuygb" data-styles-preset="j4XDnIomv" dir="auto">Combien coûte un aménagement paysager ?</h4></div>
-<div class="framer-2rjvm3" data-framer-name="Toggle" style="background-color:var(--token-INUT55ETJ);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px"><svg class="framer-ohg0r framer-1e5mt4a" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:2"><use href="#465907804"></use></svg></div>
-</div>
-<div id="faq-reponse-2" class="framer-l38ec4" data-framer-name="Answer" data-framer-component-type="RichTextContainer" hidden><p class="framer-text framer-styles-preset-il35gq">Pour la plupart des remises en état de jardin, comptez environ 2 500 $ au minimum. Pour un projet complet de conception et de réalisation, nous établissons le prix après une visite sur place. Vous recevez un devis détaillé avant le début des travaux.</p></div>
-</div></div></div></div>
-<div class="framer-ykm2ho" data-framer-name="FAQ Entry"><div class="ssr-variant"><div class="framer-13ntjla-container"><div class="framer-M6WDS framer-Uwrvc framer-9Nqly framer-oqgosc framer-v-1bs6yvs" data-border="true" data-framer-name="Closed" data-highlight="true" style="--border-bottom-width:1px;--border-color:rgba(21, 24, 21, 0.07);--border-left-width:1px;--border-right-width:1px;--border-style:solid;--border-top-width:1px;background-color:var(--token-rbMjhvx2Y);width:100%;border-bottom-left-radius:18px;border-bottom-right-radius:18px;border-top-left-radius:18px;border-top-right-radius:18px">
-<div class="framer-1rlflu0" data-framer-name="Head" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-reponse-3">
-<div class="framer-1m60ii5" data-framer-name="Question" data-framer-component-type="RichTextContainer" style="transform:none"><h4 class="framer-text framer-styles-preset-tfuygb" data-styles-preset="j4XDnIomv" dir="auto">Pouvez-vous partir de mon jardin actuel ?</h4></div>
-<div class="framer-2rjvm3" data-framer-name="Toggle" style="background-color:var(--token-INUT55ETJ);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px"><svg class="framer-ohg0r framer-1e5mt4a" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:2"><use href="#465907804"></use></svg></div>
-</div>
-<div id="faq-reponse-3" class="framer-l38ec4" data-framer-name="Answer" data-framer-component-type="RichTextContainer" hidden><p class="framer-text framer-styles-preset-il35gq">Oui. Nous conservons souvent les arbres et les arbustes en bonne santé, ainsi que les dallages en bon état. Nous repensons ensuite les plantations, les circulations ou les massifs en nous appuyant sur ce qui fonctionne déjà.</p></div>
-</div></div></div></div>
-<div class="framer-ykm2ho" data-framer-name="FAQ Entry"><div class="ssr-variant"><div class="framer-13ntjla-container"><div class="framer-M6WDS framer-Uwrvc framer-9Nqly framer-oqgosc framer-v-1bs6yvs" data-border="true" data-framer-name="Closed" data-highlight="true" style="--border-bottom-width:1px;--border-color:rgba(21, 24, 21, 0.07);--border-left-width:1px;--border-right-width:1px;--border-style:solid;--border-top-width:1px;background-color:var(--token-rbMjhvx2Y);width:100%;border-bottom-left-radius:18px;border-bottom-right-radius:18px;border-top-left-radius:18px;border-top-right-radius:18px">
-<div class="framer-1rlflu0" data-framer-name="Head" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-reponse-4">
-<div class="framer-1m60ii5" data-framer-name="Question" data-framer-component-type="RichTextContainer" style="transform:none"><h4 class="framer-text framer-styles-preset-tfuygb" data-styles-preset="j4XDnIomv" dir="auto">Combien de temps dure un projet ?</h4></div>
-<div class="framer-2rjvm3" data-framer-name="Toggle" style="background-color:var(--token-INUT55ETJ);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px"><svg class="framer-ohg0r framer-1e5mt4a" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:2"><use href="#465907804"></use></svg></div>
-</div>
-<div id="faq-reponse-4" class="framer-l38ec4" data-framer-name="Answer" data-framer-component-type="RichTextContainer" hidden><p class="framer-text framer-styles-preset-il35gq">Les petits travaux de plantation prennent généralement un à trois jours. Pour un projet plus important, de la conception à la réalisation, comptez deux à six semaines selon l’ampleur des travaux et la météo.</p></div>
-</div></div></div></div>
-<div class="framer-ykm2ho" data-framer-name="FAQ Entry"><div class="ssr-variant"><div class="framer-13ntjla-container"><div class="framer-M6WDS framer-Uwrvc framer-9Nqly framer-oqgosc framer-v-1bs6yvs" data-border="true" data-framer-name="Closed" data-highlight="true" style="--border-bottom-width:1px;--border-color:rgba(21, 24, 21, 0.07);--border-left-width:1px;--border-right-width:1px;--border-style:solid;--border-top-width:1px;background-color:var(--token-rbMjhvx2Y);width:100%;border-bottom-left-radius:18px;border-bottom-right-radius:18px;border-top-left-radius:18px;border-top-right-radius:18px">
-<div class="framer-1rlflu0" data-framer-name="Head" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-reponse-5">
-<div class="framer-1m60ii5" data-framer-name="Question" data-framer-component-type="RichTextContainer" style="transform:none"><h4 class="framer-text framer-styles-preset-tfuygb" data-styles-preset="j4XDnIomv" dir="auto">Proposez-vous un entretien régulier du jardin ?</h4></div>
-<div class="framer-2rjvm3" data-framer-name="Toggle" style="background-color:var(--token-INUT55ETJ);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px"><svg class="framer-ohg0r framer-1e5mt4a" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:2"><use href="#465907804"></use></svg></div>
-</div>
-<div id="faq-reponse-5" class="framer-l38ec4" data-framer-name="Answer" data-framer-component-type="RichTextContainer" hidden><p class="framer-text framer-styles-preset-il35gq">Oui. Nous proposons un passage chaque semaine, toutes les deux semaines ou une fois par mois. Nous intervenons aussi ponctuellement au fil des saisons pour tailler, nettoyer le jardin ou renouveler les plantations.</p></div>
-</div></div></div></div>
-<div class="framer-ykm2ho" data-framer-name="FAQ Entry"><div class="ssr-variant"><div class="framer-13ntjla-container"><div class="framer-M6WDS framer-Uwrvc framer-9Nqly framer-oqgosc framer-v-1bs6yvs" data-border="true" data-framer-name="Closed" data-highlight="true" style="--border-bottom-width:1px;--border-color:rgba(21, 24, 21, 0.07);--border-left-width:1px;--border-right-width:1px;--border-style:solid;--border-top-width:1px;background-color:var(--token-rbMjhvx2Y);width:100%;border-bottom-left-radius:18px;border-bottom-right-radius:18px;border-top-left-radius:18px;border-top-right-radius:18px">
-<div class="framer-1rlflu0" data-framer-name="Head" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-reponse-6">
-<div class="framer-1m60ii5" data-framer-name="Question" data-framer-component-type="RichTextContainer" style="transform:none"><h4 class="framer-text framer-styles-preset-tfuygb" data-styles-preset="j4XDnIomv" dir="auto">Comment démarrer mon projet ?</h4></div>
-<div class="framer-2rjvm3" data-framer-name="Toggle" style="background-color:var(--token-INUT55ETJ);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px"><svg class="framer-ohg0r framer-1e5mt4a" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:2"><use href="#465907804"></use></svg></div>
-</div>
-<div id="faq-reponse-6" class="framer-l38ec4" data-framer-name="Answer" data-framer-component-type="RichTextContainer" hidden><p class="framer-text framer-styles-preset-il35gq">Remplissez le formulaire de demande de devis en précisant quelques détails sur votre terrain. Nous vous répondrons sous un jour ouvré pour convenir d’une visite gratuite sur place.</p></div>
-</div></div></div></div>
 
-</div>
-</div></div>
-
-<script is:inline>
-for(const head of document.querySelectorAll('#faq [aria-controls]')){
-  const card=head.parentElement;
-  const answer=document.getElementById(head.getAttribute('aria-controls'));
-  function toggleAnswer(){
-    const open=answer.hidden;
-    answer.hidden=!open;
-    head.setAttribute('aria-expanded',String(open));
-    card.dataset.framerName=open?'Open':'Closed';
-    card.classList.toggle('framer-v-oqgosc',open);
-    card.classList.toggle('framer-v-1bs6yvs',!open);
-    head.querySelector('use').setAttribute('href',open?'#faq-minus':'#465907804');
-  }
-  head.addEventListener('click',toggleAnswer);
-  head.addEventListener('keydown',event=>{
-    if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleAnswer()}
-  });
-}
-</script>
-<svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs><g id="faq-minus"><path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></g></defs></svg>
+<section id="faq" class="block tint">
+  <div class="wrap split">
+    <div>
+      <Heading
+        label="FAQ"
+        title="Des questions avant de vous lancer ?"
+        description="Retrouvez les réponses aux questions les plus fréquentes. Vous avez une autre question ? Contactez-nous, nous serons ravis de vous aider."
+      />
+      <address id="contact">
+        <a href="mailto:hello@verdantora.com">
+          <b>E-mail</b>hello@verdantora.com
+        </a>
+        <a href="tel:+15035550148">
+          <b>Téléphone</b>+1 (503) 555-0148
+        </a>
+      </address>
+    </div>
+    <div class="questions">
+      {items.map((item, i) => (
+        <article data-reveal>
+          <h3>
+            <button aria-expanded="false" aria-controls={"answer-" + i}>
+              {item.question}
+              <span aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="answer" id={"answer-" + i} aria-hidden="true">
+            <div>
+              <p>{item.answer}</p>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
 </section>

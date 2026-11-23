@@ -1,96 +1,70 @@
 ---
-import photo1 from '../assets/images/services-1.jpg?inline';
-import photo2 from '../assets/images/services-2.jpg?inline';
-import photo3 from '../assets/images/services-3.jpg?inline';
-import photo4 from '../assets/images/services-4.jpg?inline';
-import photo5 from '../assets/images/services-5.jpg?inline';
-import photo6 from '../assets/images/services-6.jpg?inline';
+import Heading from "./Heading.astro";
+import Button from "./Button.astro";
+import Photo from "./Photo.astro";
+const items = [
+  {
+    title: "Conception paysagère",
+    text: "Donnons forme à vos idées avec un plan qui soigne les associations de plantes, les circulations et les détails.",
+  },
+  {
+    title: "Création de jardins",
+    text: "Nous donnons vie à votre jardin en choisissant des végétaux, en créant des massifs et en harmonisant les aménagements.",
+  },
+  {
+    title: "Création de pelouses",
+    text: "Offrez-vous une pelouse verdoyante pour les repas en plein air, les après-midi tranquilles et les plaisirs du quotidien.",
+  },
+  {
+    title: "Entretien de jardins",
+    text: "Tonte, taille et nettoyage au fil des saisons pour garder votre jardin en pleine forme.",
+  },
+  {
+    title: "Espaces de vie extérieurs",
+    text: "Des allées aux terrasses, nous dessinons des lieux accueillants pour vous détendre et recevoir.",
+  },
+  {
+    title: "Soins saisonniers",
+    text: "Préparez votre jardin à chaque changement de saison avec un nettoyage, de nouvelles plantations et des soins adaptés.",
+  },
+];
+const ids = [
+  "conception",
+  "plantations",
+  "pelouse",
+  "entretien",
+  "terrasse",
+  "saisons",
+];
 ---
-<section class="framer-9q90c2" data-framer-name="Services" id="nos-services"><div class="framer-1kqsxw" data-framer-name="Container">
-<div class="framer-5xco72" data-framer-name="Top">
-<div class="framer-1o77o4" data-framer-name="Title">
-<div class="framer-jdc532-container"><div class="framer-QZP8T framer-GWDkn framer-WCT5l framer-1n841o2 framer-v-1n841o2" data-framer-name="Dark">
-<div class="framer-190ldb8" data-framer-name="Mark" style="background-color:var(--token-ZuWZH7cws);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px"><svg class="framer-ohg0r framer-1rixcj0" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:2.5"><use href="#465907804"></use></svg></div>
-<div class="framer-34zdkf" data-framer-name="Text" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-846g2o" data-styles-preset="NzOW5QeCi" dir="auto">Nos services</p></div>
-</div></div>
-<div class="framer-1m7ldxv" data-framer-component-type="RichTextContainer" style="transform:none"><h2 class="framer-text framer-styles-preset-20vnzn" data-styles-preset="e0Wa4U59r" dir="auto">Tout pour voir votre jardin s’épanouir.</h2></div>
-</div>
-<div class="framer-s2nfpk" data-framer-name="Intro">
-<div class="framer-11mussw" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-il35gq" data-styles-preset="dUG1ijfyF" dir="auto">De la première esquisse aux soins de saison, nous aménageons des espaces agréables à vivre et faciles à entretenir.</p></div>
-<div class="framer-1rc7lvi-container">
-<a class="framer-gljCW framer-40yq0d framer-v-zed4g7 framer-15ygc33" data-framer-name="Dark" href="#prestations" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;backdrop-filter:none;background-color:var(--token-pzHCByf7R);-webkit-backdrop-filter:none;border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px"><div class="framer-15v14c7" data-framer-name="Label" data-framer-component-type="RichTextContainer" style="--extracted-1asg273:normal;--extracted-1w3ko1f:var(--token-rbMjhvx2Y);--extracted-2gg91v:normal;--extracted-r6o4lv:var(--token-rbMjhvx2Y);transform:none"><p dir="auto" class="framer-text" style='--font-selector:SW50ZXItTWVkaXVt;--framer-font-family:"Inter";--framer-font-size:15px;--framer-font-style:normal;--framer-font-variation-axes:var(--extracted-2gg91v, normal);--framer-font-weight:500;--framer-letter-spacing:-0.01em;--framer-line-height:1em;--framer-text-color:var(--extracted-r6o4lv, var(--token-rbMjhvx2Y))'><span class="framer-text" style='--font-selector:SW50ZXItTWVkaXVt;--framer-font-family:"Inter";--framer-font-size:15px;--framer-font-style:normal;--framer-font-variation-axes:var(--extracted-1asg273, normal);--framer-font-weight:500;--framer-letter-spacing:-0.01em;--framer-text-color:var(--extracted-1w3ko1f, var(--token-rbMjhvx2Y))'>Voir tous nos services</span></p></div>
-<div class="framer-117t63w" data-framer-name="Badge" style="background-color:var(--token-ZuWZH7cws);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px;transform:none"><svg data-framer-name="Leaf" class="framer-6wHqz framer-1sshw2c" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:1.5"><use href="#2386227719"></use></svg></div></a>
-</div>
 
-</div>
-</div>
-<div class="framer-cekniw" data-framer-name="Service Grid">
-<div class="framer-xw07dx" data-framer-name="Service Item">
-<div class="ssr-variant"><div class="framer-1lunpbx-container">
-<a class="framer-KIXYM framer-qu2ys framer-CjBm3 framer-1mqqi1r framer-v-1mqqi1r framer-osgrky" data-framer-name="Default" href="#conception" style="background-color:var(--token-QF5EVwYNN);height:100%;width:100%;border-bottom-left-radius:22px;border-bottom-right-radius:22px;border-top-left-radius:22px;border-top-right-radius:22px"><div class="framer-5mfjm2" data-framer-name="Image" style="transform:none"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2000" height="1680" sizes="(min-width: 1200px) max((min(100vw - 160px, 1120px) - 32px) / 3, 280px), (max-width: 809.98px) max(min(100vw - 60px, 1120px), 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 112px, 1120px) - 16px) / 2, 280px)" src={photo1} alt style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></div>
-<div class="framer-1734mzt" data-framer-name="Shade" style="background:linear-gradient(180deg, rgba(14, 18, 15, 0) 30%, rgba(14, 18, 15, 0.88) 100%)"></div>
-<div class="framer-zxfhcb" data-framer-name="Content">
-<div class="framer-yo27r4" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h3 class="framer-text framer-styles-preset-10rp4v5" data-styles-preset="P5Q1xIy9I" dir="auto">Conception paysagère</h3></div>
-<div class="framer-1o3wtzj" data-framer-name="Description" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-juvvj9" data-styles-preset="uiOoIT1Fl" dir="auto">Donnons forme à vos idées avec un plan qui soigne les associations de plantes, les circulations et les détails.</p></div>
-</div></a>
-</div></div>
-
-</div>
-<div class="framer-xw07dx" data-framer-name="Service Item">
-<div class="ssr-variant"><div class="framer-1lunpbx-container">
-<a class="framer-KIXYM framer-qu2ys framer-CjBm3 framer-1mqqi1r framer-v-1mqqi1r framer-osgrky" data-framer-name="Default" href="#plantations" style="background-color:var(--token-QF5EVwYNN);height:100%;width:100%;border-bottom-left-radius:22px;border-bottom-right-radius:22px;border-top-left-radius:22px;border-top-right-radius:22px"><div class="framer-5mfjm2" data-framer-name="Image" style="transform:none"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2000" height="1600" sizes="(min-width: 1200px) max((min(100vw - 160px, 1120px) - 32px) / 3, 280px), (max-width: 809.98px) max(min(100vw - 60px, 1120px), 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 112px, 1120px) - 16px) / 2, 280px)" src={photo2} alt style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></div>
-<div class="framer-1734mzt" data-framer-name="Shade" style="background:linear-gradient(180deg, rgba(14, 18, 15, 0) 30%, rgba(14, 18, 15, 0.88) 100%)"></div>
-<div class="framer-zxfhcb" data-framer-name="Content">
-<div class="framer-yo27r4" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h3 class="framer-text framer-styles-preset-10rp4v5" data-styles-preset="P5Q1xIy9I" dir="auto">Création de jardins</h3></div>
-<div class="framer-1o3wtzj" data-framer-name="Description" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-juvvj9" data-styles-preset="uiOoIT1Fl" dir="auto">Nous donnons vie à votre jardin en choisissant des végétaux, en créant des massifs et en harmonisant les aménagements.</p></div>
-</div></a>
-</div></div>
-
-</div>
-<div class="framer-xw07dx" data-framer-name="Service Item">
-<div class="ssr-variant"><div class="framer-1lunpbx-container">
-<a class="framer-KIXYM framer-qu2ys framer-CjBm3 framer-1mqqi1r framer-v-1mqqi1r framer-osgrky" data-framer-name="Default" href="#pelouse" style="background-color:var(--token-QF5EVwYNN);height:100%;width:100%;border-bottom-left-radius:22px;border-bottom-right-radius:22px;border-top-left-radius:22px;border-top-right-radius:22px"><div class="framer-5mfjm2" data-framer-name="Image" style="transform:none"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2000" height="857" sizes="(min-width: 1200px) max((min(100vw - 160px, 1120px) - 32px) / 3, 280px), (max-width: 809.98px) max(min(100vw - 60px, 1120px), 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 112px, 1120px) - 16px) / 2, 280px)" src={photo3} alt style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></div>
-<div class="framer-1734mzt" data-framer-name="Shade" style="background:linear-gradient(180deg, rgba(14, 18, 15, 0) 30%, rgba(14, 18, 15, 0.88) 100%)"></div>
-<div class="framer-zxfhcb" data-framer-name="Content">
-<div class="framer-yo27r4" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h3 class="framer-text framer-styles-preset-10rp4v5" data-styles-preset="P5Q1xIy9I" dir="auto">Création de pelouses</h3></div>
-<div class="framer-1o3wtzj" data-framer-name="Description" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-juvvj9" data-styles-preset="uiOoIT1Fl" dir="auto">Offrez-vous une pelouse verdoyante pour les repas en plein air, les après-midi tranquilles et les plaisirs du quotidien.</p></div>
-</div></a>
-</div></div>
-
-</div>
-<div class="framer-xw07dx" data-framer-name="Service Item">
-<div class="ssr-variant"><div class="framer-1lunpbx-container">
-<a class="framer-KIXYM framer-qu2ys framer-CjBm3 framer-1mqqi1r framer-v-1mqqi1r framer-osgrky" data-framer-name="Default" href="#entretien" style="background-color:var(--token-QF5EVwYNN);height:100%;width:100%;border-bottom-left-radius:22px;border-bottom-right-radius:22px;border-top-left-radius:22px;border-top-right-radius:22px"><div class="framer-5mfjm2" data-framer-name="Image" style="transform:none"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2000" height="1333" sizes="(min-width: 1200px) max((min(100vw - 160px, 1120px) - 32px) / 3, 280px), (max-width: 809.98px) max(min(100vw - 60px, 1120px), 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 112px, 1120px) - 16px) / 2, 280px)" src={photo4} alt style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></div>
-<div class="framer-1734mzt" data-framer-name="Shade" style="background:linear-gradient(180deg, rgba(14, 18, 15, 0) 30%, rgba(14, 18, 15, 0.88) 100%)"></div>
-<div class="framer-zxfhcb" data-framer-name="Content">
-<div class="framer-yo27r4" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h3 class="framer-text framer-styles-preset-10rp4v5" data-styles-preset="P5Q1xIy9I" dir="auto">Entretien de jardins</h3></div>
-<div class="framer-1o3wtzj" data-framer-name="Description" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-juvvj9" data-styles-preset="uiOoIT1Fl" dir="auto">Tonte, taille et nettoyage au fil des saisons pour garder votre jardin en pleine forme.</p></div>
-</div></a>
-</div></div>
-
-</div>
-<div class="framer-xw07dx" data-framer-name="Service Item">
-<div class="ssr-variant"><div class="framer-1lunpbx-container">
-<a class="framer-KIXYM framer-qu2ys framer-CjBm3 framer-1mqqi1r framer-v-1mqqi1r framer-osgrky" data-framer-name="Default" href="#terrasse" style="background-color:var(--token-QF5EVwYNN);height:100%;width:100%;border-bottom-left-radius:22px;border-bottom-right-radius:22px;border-top-left-radius:22px;border-top-right-radius:22px"><div class="framer-5mfjm2" data-framer-name="Image" style="transform:none"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2000" height="1334" sizes="(min-width: 1200px) max((min(100vw - 160px, 1120px) - 32px) / 3, 280px), (max-width: 809.98px) max(min(100vw - 60px, 1120px), 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 112px, 1120px) - 16px) / 2, 280px)" src={photo5} alt style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></div>
-<div class="framer-1734mzt" data-framer-name="Shade" style="background:linear-gradient(180deg, rgba(14, 18, 15, 0) 30%, rgba(14, 18, 15, 0.88) 100%)"></div>
-<div class="framer-zxfhcb" data-framer-name="Content">
-<div class="framer-yo27r4" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h3 class="framer-text framer-styles-preset-10rp4v5" data-styles-preset="P5Q1xIy9I" dir="auto">Espaces de vie extérieurs</h3></div>
-<div class="framer-1o3wtzj" data-framer-name="Description" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-juvvj9" data-styles-preset="uiOoIT1Fl" dir="auto">Des allées aux terrasses, nous dessinons des lieux accueillants pour vous détendre et recevoir.</p></div>
-</div></a>
-</div></div>
-
-</div>
-<div class="framer-xw07dx" data-framer-name="Service Item">
-<div class="ssr-variant"><div class="framer-1lunpbx-container">
-<a class="framer-KIXYM framer-qu2ys framer-CjBm3 framer-1mqqi1r framer-v-1mqqi1r framer-osgrky" data-framer-name="Default" href="#saisons" style="background-color:var(--token-QF5EVwYNN);height:100%;width:100%;border-bottom-left-radius:22px;border-bottom-right-radius:22px;border-top-left-radius:22px;border-top-right-radius:22px"><div class="framer-5mfjm2" data-framer-name="Image" style="transform:none"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2000" height="1333" sizes="(min-width: 1200px) max((min(100vw - 160px, 1120px) - 32px) / 3, 280px), (max-width: 809.98px) max(min(100vw - 60px, 1120px), 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 112px, 1120px) - 16px) / 2, 280px)" src={photo6} alt style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></div>
-<div class="framer-1734mzt" data-framer-name="Shade" style="background:linear-gradient(180deg, rgba(14, 18, 15, 0) 30%, rgba(14, 18, 15, 0.88) 100%)"></div>
-<div class="framer-zxfhcb" data-framer-name="Content">
-<div class="framer-yo27r4" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h3 class="framer-text framer-styles-preset-10rp4v5" data-styles-preset="P5Q1xIy9I" dir="auto">Soins saisonniers</h3></div>
-<div class="framer-1o3wtzj" data-framer-name="Description" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-juvvj9" data-styles-preset="uiOoIT1Fl" dir="auto">Préparez votre jardin à chaque changement de saison avec un nettoyage, de nouvelles plantations et des soins adaptés.</p></div>
-</div></a>
-</div></div>
-
-</div>
-
-</div>
-</div></section>
+<section id="nos-services" class="block tint">
+  <div class="wrap">
+    <div class="section-intro">
+      <Heading
+        label="Nos services"
+        title="Tout pour voir votre jardin s’épanouir."
+      />
+      <div data-reveal>
+        <p>
+          De la première esquisse aux soins de saison, nous aménageons des
+          espaces agréables à vivre et faciles à entretenir.
+        </p>
+        <Button href="#prestations" tone="dark">
+          Voir tous nos services
+        </Button>
+      </div>
+    </div>
+    <div class="services grid">
+      {items.map((item, i) => (
+        <a data-reveal class="service cover" href={"#" + ids[i]}>
+          <Photo name={"services-" + (i + 1)} class="backdrop" />
+          <div>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

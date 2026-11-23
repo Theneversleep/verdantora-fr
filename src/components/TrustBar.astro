@@ -1,36 +1,28 @@
 ---
-
+import Feature from "./Feature.astro";
+const items = [
+  {
+    title: "Inspiré par la nature",
+    text: "Des espaces extérieurs à votre image.",
+  },
+  {
+    title: "Un travail soigné",
+    text: "Le souci du détail, du début à la fin.",
+  },
+  {
+    title: "Un service personnalisé",
+    text: "Des projets pensés selon vos besoins.",
+  },
+  {
+    title: "Un entretien régulier",
+    text: "Votre jardin suivi au fil des saisons.",
+  },
+];
+const icons = ["plant", "award", "care", "time"];
 ---
-<section class="framer-1ayvecd" data-framer-name="Trust Bar"><div class="framer-h7cs2i" data-framer-name="Container">
-<div class="framer-19viz7c" data-framer-name="Trust Items">
-<div class="ssr-variant"><div class="framer-1y1n04x-container"><div class="framer-BbOC4 framer-Uwrvc framer-9Nqly framer-1gcrdw4 framer-v-1gcrdw4" data-framer-name="Plain" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background-color:rgba(0, 0, 0, 0);width:100%;border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-left-radius:0px;border-top-right-radius:0px">
-<div class="framer-1xz89pa" data-framer-name="Icon Box" style="background-color:var(--token-ZuWZH7cws);border-bottom-left-radius:14px;border-bottom-right-radius:14px;border-top-left-radius:14px;border-top-right-radius:14px"><svg class="framer-yY8dQ framer-wv5a3x" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:1.5"><use href="#2542966780"></use></svg></div>
-<div class="framer-97kop3" data-framer-name="Text">
-<div class="framer-9d9fqz" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h4 class="framer-text framer-styles-preset-tfuygb" data-styles-preset="j4XDnIomv" dir="auto">Inspiré par la nature</h4></div>
-<div class="framer-1paq8nb" data-framer-name="Description" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-il35gq" data-styles-preset="dUG1ijfyF" dir="auto">Des espaces extérieurs à votre image.</p></div>
-</div>
-</div></div></div>
-<div class="ssr-variant"><div class="framer-yq10zv-container"><div class="framer-BbOC4 framer-Uwrvc framer-9Nqly framer-1gcrdw4 framer-v-1gcrdw4" data-framer-name="Plain" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background-color:rgba(0, 0, 0, 0);width:100%;border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-left-radius:0px;border-top-right-radius:0px">
-<div class="framer-1xz89pa" data-framer-name="Icon Box" style="background-color:var(--token-ZuWZH7cws);border-bottom-left-radius:14px;border-bottom-right-radius:14px;border-top-left-radius:14px;border-top-right-radius:14px"><svg class="framer-lgyKf framer-wv5a3x" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:1.5"><use href="#3599722627"></use></svg></div>
-<div class="framer-97kop3" data-framer-name="Text">
-<div class="framer-9d9fqz" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h4 class="framer-text framer-styles-preset-tfuygb" data-styles-preset="j4XDnIomv" dir="auto">Un travail soigné</h4></div>
-<div class="framer-1paq8nb" data-framer-name="Description" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-il35gq" data-styles-preset="dUG1ijfyF" dir="auto">Le souci du détail, du début à la fin.</p></div>
-</div>
-</div></div></div>
-<div class="ssr-variant"><div class="framer-1fvtsbj-container"><div class="framer-BbOC4 framer-Uwrvc framer-9Nqly framer-1gcrdw4 framer-v-1gcrdw4" data-framer-name="Plain" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background-color:rgba(0, 0, 0, 0);width:100%;border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-left-radius:0px;border-top-right-radius:0px">
-<div class="framer-1xz89pa" data-framer-name="Icon Box" style="background-color:var(--token-ZuWZH7cws);border-bottom-left-radius:14px;border-bottom-right-radius:14px;border-top-left-radius:14px;border-top-right-radius:14px"><svg class="framer-CCPgn framer-wv5a3x" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:1.5"><use href="#654422706"></use></svg></div>
-<div class="framer-97kop3" data-framer-name="Text">
-<div class="framer-9d9fqz" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h4 class="framer-text framer-styles-preset-tfuygb" data-styles-preset="j4XDnIomv" dir="auto">Un service personnalisé</h4></div>
-<div class="framer-1paq8nb" data-framer-name="Description" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-il35gq" data-styles-preset="dUG1ijfyF" dir="auto">Des projets pensés selon vos besoins.</p></div>
-</div>
-</div></div></div>
-<div class="ssr-variant"><div class="framer-1gp99mb-container"><div class="framer-BbOC4 framer-Uwrvc framer-9Nqly framer-1gcrdw4 framer-v-1gcrdw4" data-framer-name="Plain" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background-color:rgba(0, 0, 0, 0);width:100%;border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-left-radius:0px;border-top-right-radius:0px">
-<div class="framer-1xz89pa" data-framer-name="Icon Box" style="background-color:var(--token-ZuWZH7cws);border-bottom-left-radius:14px;border-bottom-right-radius:14px;border-top-left-radius:14px;border-top-right-radius:14px"><svg class="framer-JxpvT framer-wv5a3x" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:1.5"><use href="#3284164620"></use></svg></div>
-<div class="framer-97kop3" data-framer-name="Text">
-<div class="framer-9d9fqz" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h4 class="framer-text framer-styles-preset-tfuygb" data-styles-preset="j4XDnIomv" dir="auto">Un entretien régulier</h4></div>
-<div class="framer-1paq8nb" data-framer-name="Description" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-il35gq" data-styles-preset="dUG1ijfyF" dir="auto">Votre jardin suivi au fil des saisons.</p></div>
-</div>
-</div></div></div>
-</div>
-<div class="framer-1yv1tts" data-framer-name="Divider"></div>
-</div></section>
+
+<section class="trust wrap" aria-label="Nos engagements">
+  {items.map((item, i) => (
+    <Feature {...item} icon={icons[i]} />
+  ))}
+</section>

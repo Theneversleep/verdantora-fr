@@ -1,62 +1,62 @@
 ---
-import photo1 from '../assets/images/projects-1.jpg?inline';
-import photo2 from '../assets/images/projects-2.jpg?inline';
-import photo3 from '../assets/images/projects-3.jpg?inline';
-import photo4 from '../assets/images/about-2.jpg?inline';
+import Heading from "./Heading.astro";
+import Button from "./Button.astro";
+import Photo from "./Photo.astro";
+const items = [
+  {
+    date: "Achevé en 2025",
+    title: "Un jardin refuge",
+    category: "Conception d’un jardin privé",
+  },
+  {
+    date: "Achevé en 2025",
+    title: "Une entrée accueillante",
+    category: "Réaménagement du jardin de devant",
+  },
+  {
+    date: "Achevé en 2024",
+    title: "Une échappée au grand air",
+    category: "Terrasse et espace de vie extérieur",
+  },
+  {
+    date: "Achevé en 2024",
+    title: "Un nouveau souffle au jardin",
+    category: "Rénovation de la pelouse et des massifs",
+  },
+];
+const photos = ["projects-1", "projects-2", "projects-3", "about-2"];
+const ids = [
+  "the-garden-retreat",
+  "the-welcoming-entrance",
+  "the-outdoor-escape",
+  "the-green-refresh",
+];
 ---
-<section class="framer-r1b2ny" data-framer-name="Featured Projects" id="projets-a-la-une"><div class="framer-1wgfy72" data-framer-name="Container">
-<div class="framer-qto23e" data-framer-name="Header">
-<div class="framer-6ah1kg-container"><div class="framer-QZP8T framer-GWDkn framer-WCT5l framer-1n841o2 framer-v-1n841o2" data-framer-name="Dark">
-<div class="framer-190ldb8" data-framer-name="Mark" style="background-color:var(--token-ZuWZH7cws);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px"><svg class="framer-ohg0r framer-1rixcj0" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:2.5"><use href="#465907804"></use></svg></div>
-<div class="framer-34zdkf" data-framer-name="Text" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-846g2o" data-styles-preset="NzOW5QeCi" dir="auto">Projets à la une</p></div>
-</div></div>
-<div class="framer-wsisq0" data-framer-component-type="RichTextContainer" style="transform:none"><h2 class="framer-text framer-styles-preset-20vnzn" data-styles-preset="e0Wa4U59r" dir="auto" style="--framer-text-alignment:center">Des jardins à vivre.</h2></div>
-<div class="framer-1vc9ng6" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-79y66i" data-styles-preset="KqVCeVwx9" dir="auto" style="--framer-text-alignment:center">Découvrez nos jardins récents, des coins de verdure à l’abri des regards aux entrées accueillantes et aux massifs faciles à entretenir.</p></div>
-</div>
-<div class="framer-1txxt8f" data-framer-name="Project Grid">
-<a class="framer-1ymwqd5 framer-lux5qc" data-framer-name="Project Item" href="#the-garden-retreat"><div class="ssr-variant"><div class="framer-10uzhf6-container"><div class="framer-YX1ns framer-aJ617 framer-9Nqly framer-s4i5jh framer-v-s4i5jh" data-framer-name="Default" style="width:100%">
-<div class="framer-6fsnz5" data-framer-name="Media" style="background-color:var(--token-INUT55ETJ);border-bottom-left-radius:22px;border-bottom-right-radius:22px;border-top-left-radius:22px;border-top-right-radius:22px">
-<div class="framer-1xb4iwx" data-framer-name="Image" style="transform:none"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2000" height="1500" sizes="(min-width: 1200px) max((min(100vw - 160px, 1120px) - 20px) / 2, 300px), (max-width: 809.98px) max(min(100vw - 60px, 1120px), 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 112px, 1120px) - 20px) / 2, 300px)" src={photo1} alt style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></div>
-<div class="framer-1o4brhv" data-framer-name="Tag" style="backdrop-filter:blur(10px);background-color:rgba(255, 255, 255, 0.88);-webkit-backdrop-filter:blur(10px);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px"><div class="framer-1ojilbw" data-framer-component-type="RichTextContainer" style="--extracted-1asg273:normal;--extracted-1w3ko1f:var(--token-pzHCByf7R);--extracted-2gg91v:normal;--extracted-r6o4lv:var(--token-pzHCByf7R);transform:none"><p dir="auto" class="framer-text" style='--font-selector:SW50ZXItTWVkaXVt;--framer-font-family:"Inter";--framer-font-size:12px;--framer-font-style:normal;--framer-font-variation-axes:var(--extracted-2gg91v, normal);--framer-font-weight:500;--framer-line-height:1em;--framer-text-color:var(--extracted-r6o4lv, var(--token-pzHCByf7R))'><span class="framer-text" style='--font-selector:SW50ZXItTWVkaXVt;--framer-font-family:"Inter";--framer-font-size:12px;--framer-font-style:normal;--framer-font-variation-axes:var(--extracted-1asg273, normal);--framer-font-weight:500;--framer-text-color:var(--extracted-1w3ko1f, var(--token-pzHCByf7R))'>Achevé en 2025</span></p></div></div>
-</div>
-<div class="framer-1pd8wny" data-framer-name="Meta">
-<div class="framer-s5kzux" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h3 class="framer-text framer-styles-preset-ww9rt1" data-styles-preset="SqipyzMUD" dir="auto">Un jardin refuge</h3></div>
-<div class="framer-1gvtnf5" data-framer-name="Category" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-il35gq" data-styles-preset="dUG1ijfyF" dir="auto">Conception d’un jardin privé</p></div>
-</div>
-</div></div></div></a><a class="framer-1ymwqd5 framer-lux5qc" data-framer-name="Project Item" href="#the-welcoming-entrance"><div class="ssr-variant"><div class="framer-10uzhf6-container"><div class="framer-YX1ns framer-aJ617 framer-9Nqly framer-s4i5jh framer-v-s4i5jh" data-framer-name="Default" style="width:100%">
-<div class="framer-6fsnz5" data-framer-name="Media" style="background-color:var(--token-INUT55ETJ);border-bottom-left-radius:22px;border-bottom-right-radius:22px;border-top-left-radius:22px;border-top-right-radius:22px">
-<div class="framer-1xb4iwx" data-framer-name="Image" style="transform:none"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2000" height="1333" sizes="(min-width: 1200px) max((min(100vw - 160px, 1120px) - 20px) / 2, 300px), (max-width: 809.98px) max(min(100vw - 60px, 1120px), 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 112px, 1120px) - 20px) / 2, 300px)" src={photo2} alt style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></div>
-<div class="framer-1o4brhv" data-framer-name="Tag" style="backdrop-filter:blur(10px);background-color:rgba(255, 255, 255, 0.88);-webkit-backdrop-filter:blur(10px);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px"><div class="framer-1ojilbw" data-framer-component-type="RichTextContainer" style="--extracted-1asg273:normal;--extracted-1w3ko1f:var(--token-pzHCByf7R);--extracted-2gg91v:normal;--extracted-r6o4lv:var(--token-pzHCByf7R);transform:none"><p dir="auto" class="framer-text" style='--font-selector:SW50ZXItTWVkaXVt;--framer-font-family:"Inter";--framer-font-size:12px;--framer-font-style:normal;--framer-font-variation-axes:var(--extracted-2gg91v, normal);--framer-font-weight:500;--framer-line-height:1em;--framer-text-color:var(--extracted-r6o4lv, var(--token-pzHCByf7R))'><span class="framer-text" style='--font-selector:SW50ZXItTWVkaXVt;--framer-font-family:"Inter";--framer-font-size:12px;--framer-font-style:normal;--framer-font-variation-axes:var(--extracted-1asg273, normal);--framer-font-weight:500;--framer-text-color:var(--extracted-1w3ko1f, var(--token-pzHCByf7R))'>Achevé en 2025</span></p></div></div>
-</div>
-<div class="framer-1pd8wny" data-framer-name="Meta">
-<div class="framer-s5kzux" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h3 class="framer-text framer-styles-preset-ww9rt1" data-styles-preset="SqipyzMUD" dir="auto">Une entrée accueillante</h3></div>
-<div class="framer-1gvtnf5" data-framer-name="Category" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-il35gq" data-styles-preset="dUG1ijfyF" dir="auto">Réaménagement du jardin de devant</p></div>
-</div>
-</div></div></div></a><a class="framer-1ymwqd5 framer-lux5qc" data-framer-name="Project Item" href="#the-outdoor-escape"><div class="ssr-variant"><div class="framer-10uzhf6-container"><div class="framer-YX1ns framer-aJ617 framer-9Nqly framer-s4i5jh framer-v-s4i5jh" data-framer-name="Default" style="width:100%">
-<div class="framer-6fsnz5" data-framer-name="Media" style="background-color:var(--token-INUT55ETJ);border-bottom-left-radius:22px;border-bottom-right-radius:22px;border-top-left-radius:22px;border-top-right-radius:22px">
-<div class="framer-1xb4iwx" data-framer-name="Image" style="transform:none"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2000" height="1333" sizes="(min-width: 1200px) max((min(100vw - 160px, 1120px) - 20px) / 2, 300px), (max-width: 809.98px) max(min(100vw - 60px, 1120px), 1px), (min-width: 810px) and (max-width: 1199.98px) max((min(100vw - 112px, 1120px) - 20px) / 2, 300px)" src={photo3} alt style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></div>
-<div class="framer-1o4brhv" data-framer-name="Tag" style="backdrop-filter:blur(10px);background-color:rgba(255, 255, 255, 0.88);-webkit-backdrop-filter:blur(10px);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px"><div class="framer-1ojilbw" data-framer-component-type="RichTextContainer" style="--extracted-1asg273:normal;--extracted-1w3ko1f:var(--token-pzHCByf7R);--extracted-2gg91v:normal;--extracted-r6o4lv:var(--token-pzHCByf7R);transform:none"><p dir="auto" class="framer-text" style='--font-selector:SW50ZXItTWVkaXVt;--framer-font-family:"Inter";--framer-font-size:12px;--framer-font-style:normal;--framer-font-variation-axes:var(--extracted-2gg91v, normal);--framer-font-weight:500;--framer-line-height:1em;--framer-text-color:var(--extracted-r6o4lv, var(--token-pzHCByf7R))'><span class="framer-text" style='--font-selector:SW50ZXItTWVkaXVt;--framer-font-family:"Inter";--framer-font-size:12px;--framer-font-style:normal;--framer-font-variation-axes:var(--extracted-1asg273, normal);--framer-font-weight:500;--framer-text-color:var(--extracted-1w3ko1f, var(--token-pzHCByf7R))'>Achevé en 2024</span></p></div></div>
-</div>
-<div class="framer-1pd8wny" data-framer-name="Meta">
-<div class="framer-s5kzux" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h3 class="framer-text framer-styles-preset-ww9rt1" data-styles-preset="SqipyzMUD" dir="auto">Une échappée au grand air</h3></div>
-<div class="framer-1gvtnf5" data-framer-name="Category" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-il35gq" data-styles-preset="dUG1ijfyF" dir="auto">Terrasse et espace de vie extérieur</p></div>
-</div>
-</div></div></div></a><a class="framer-1ymwqd5 framer-lux5qc" data-framer-name="Project Item" href="#the-green-refresh"><div class="ssr-variant"><div class="framer-10uzhf6-container"><div class="framer-YX1ns framer-aJ617 framer-9Nqly framer-s4i5jh framer-v-s4i5jh" data-framer-name="Default" style="width:100%">
-<div class="framer-6fsnz5" data-framer-name="Media" style="background-color:var(--token-INUT55ETJ);border-bottom-left-radius:22px;border-bottom-right-radius:22px;border-top-left-radius:22px;border-top-right-radius:22px">
-<div class="framer-1xb4iwx" data-framer-name="Image" style="transform:none"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2000" height="1333" sizes="(min-width: 1200px) max(max(min(100vw - 160px, 1120px), 260px), max((min(100vw - 160px, 1120px) - 20px) / 2, 300px)), (max-width: 809.98px) max(max(min(100vw - 60px, 1120px), 260px), max(min(100vw - 60px, 1120px), 1px)), (min-width: 810px) and (max-width: 1199.98px) max(max(min(100vw - 112px, 1120px), 260px), max((min(100vw - 112px, 1120px) - 20px) / 2, 300px))" src={photo4} alt style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></div>
-<div class="framer-1o4brhv" data-framer-name="Tag" style="backdrop-filter:blur(10px);background-color:rgba(255, 255, 255, 0.88);-webkit-backdrop-filter:blur(10px);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px"><div class="framer-1ojilbw" data-framer-component-type="RichTextContainer" style="--extracted-1asg273:normal;--extracted-1w3ko1f:var(--token-pzHCByf7R);--extracted-2gg91v:normal;--extracted-r6o4lv:var(--token-pzHCByf7R);transform:none"><p dir="auto" class="framer-text" style='--font-selector:SW50ZXItTWVkaXVt;--framer-font-family:"Inter";--framer-font-size:12px;--framer-font-style:normal;--framer-font-variation-axes:var(--extracted-2gg91v, normal);--framer-font-weight:500;--framer-line-height:1em;--framer-text-color:var(--extracted-r6o4lv, var(--token-pzHCByf7R))'><span class="framer-text" style='--font-selector:SW50ZXItTWVkaXVt;--framer-font-family:"Inter";--framer-font-size:12px;--framer-font-style:normal;--framer-font-variation-axes:var(--extracted-1asg273, normal);--framer-font-weight:500;--framer-text-color:var(--extracted-1w3ko1f, var(--token-pzHCByf7R))'>Achevé en 2024</span></p></div></div>
-</div>
-<div class="framer-1pd8wny" data-framer-name="Meta">
-<div class="framer-s5kzux" data-framer-name="Title" data-framer-component-type="RichTextContainer" style="transform:none"><h3 class="framer-text framer-styles-preset-ww9rt1" data-styles-preset="SqipyzMUD" dir="auto">Un nouveau souffle au jardin</h3></div>
-<div class="framer-1gvtnf5" data-framer-name="Category" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-il35gq" data-styles-preset="dUG1ijfyF" dir="auto">Rénovation de la pelouse et des massifs</p></div>
-</div>
-</div></div></div></a>
-</div>
-<div class="framer-1vx24um" data-framer-name="Footer">
-<div class="framer-c1ffit-container">
-<a class="framer-gljCW framer-40yq0d framer-v-zed4g7 framer-15ygc33" data-framer-name="Dark" href="#realisations" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;backdrop-filter:none;background-color:var(--token-pzHCByf7R);-webkit-backdrop-filter:none;border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px"><div class="framer-15v14c7" data-framer-name="Label" data-framer-component-type="RichTextContainer" style="--extracted-1asg273:normal;--extracted-1w3ko1f:var(--token-rbMjhvx2Y);--extracted-2gg91v:normal;--extracted-r6o4lv:var(--token-rbMjhvx2Y);transform:none"><p dir="auto" class="framer-text" style='--font-selector:SW50ZXItTWVkaXVt;--framer-font-family:"Inter";--framer-font-size:15px;--framer-font-style:normal;--framer-font-variation-axes:var(--extracted-2gg91v, normal);--framer-font-weight:500;--framer-letter-spacing:-0.01em;--framer-line-height:1em;--framer-text-color:var(--extracted-r6o4lv, var(--token-rbMjhvx2Y))'><span class="framer-text" style='--font-selector:SW50ZXItTWVkaXVt;--framer-font-family:"Inter";--framer-font-size:15px;--framer-font-style:normal;--framer-font-variation-axes:var(--extracted-1asg273, normal);--framer-font-weight:500;--framer-letter-spacing:-0.01em;--framer-text-color:var(--extracted-1w3ko1f, var(--token-rbMjhvx2Y))'>Découvrir nos projets</span></p></div>
-<div class="framer-117t63w" data-framer-name="Badge" style="background-color:var(--token-ZuWZH7cws);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px;transform:none"><svg data-framer-name="Leaf" class="framer-6wHqz framer-1sshw2c" role="presentation" viewBox="0 0 24 24" style="--1m6trwb:0;--21h8s6:rgb(21, 24, 21);--pgex8v:1.5"><use href="#2386227719"></use></svg></div></a>
-</div>
-<div class="framer-1clcvv7" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-1yhxf9o" data-styles-preset="gNxdjVtoc" dir="auto" style="--framer-text-alignment:center">Chaque projet commence par une visite gratuite sur place.</p></div>
-</div>
-</div></section>
+
+<section id="projets-a-la-une" class="block tint">
+  <div class="wrap">
+    <Heading
+      label="Projets à la une"
+      title="Des jardins à vivre."
+      description="Découvrez nos jardins récents, des coins de verdure à l’abri des regards aux entrées accueillantes et aux massifs faciles à entretenir."
+    />
+    <div class="projects grid">
+      {items.map((item, i) => (
+        <a class="project" data-reveal href={"#" + ids[i]}>
+          <figure>
+            <Photo name={photos[i]} />
+            <small>{item.date}</small>
+          </figure>
+          <h3>{item.title}</h3>
+          <p>{item.category}</p>
+        </a>
+      ))}
+    </div>
+    <div class="center" data-reveal>
+      <Button href="#realisations" tone="dark">
+        Découvrir nos projets
+      </Button>
+      <p>Chaque projet commence par une visite gratuite sur place.</p>
+    </div>
+  </div>
+</section>

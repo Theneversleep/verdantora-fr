@@ -1,0 +1,9 @@
+---
+const { label, title, description } = Astro.props;
+---
+
+<header class="heading" data-reveal>
+  <span class="eyebrow">{label}</span>
+  <h2>{title}</h2>
+  {description && <p>{description}</p>}
+</header>
